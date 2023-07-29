@@ -384,7 +384,7 @@ col4.title('Discuit')
 
 st.sidebar.markdown(
 """
-**Reference:**
+**Reference:**  \n
 Please cite this app when using it as follows:  \n
 De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195515
 
