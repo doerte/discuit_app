@@ -22,9 +22,11 @@ st.set_page_config(
     page_icon=im,
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'http://link.com',
-        'Report a bug': 'http://link.com',
-        'About': "# This is a header.  \nThis is an *extremely* cool app!  \nContact me at: d.a.de.kok@rug.nl",
+        #'Get Help': 'http://link.com',
+        'Report a bug': 'https://github.com/doerte/discuit_app/issues',
+        'About': "# Discuit  \nPlease cite this app when using it as follows:  \n "
+                 "De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195515"
+                 #"  \n  \nContact me at: d.a.de.kok@rug.nl",
     }
 )
 
@@ -382,6 +384,10 @@ col4.title('Discuit')
 
 st.sidebar.markdown(
 """
+**Reference:**
+Please cite this app when using it as follows:  \n
+De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195515
+
 **Steps to take:**
 - Upload an input file (.csv) with your items;
 """)
