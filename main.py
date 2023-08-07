@@ -18,7 +18,7 @@ st.set_page_config(
         # 'Get Help': 'http://link.com',
         'Report a bug': 'https://github.com/doerte/discuit_app/issues',
         'About': "# Discuit  \nPlease cite this app when using it as follows:  \n "
-                 "De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195515"
+                 "De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195514"
         # "  \n  \nContact me at: d.a.de.kok@rug.nl",
     }
 )
@@ -45,7 +45,7 @@ st.sidebar.markdown(
     """
 **Reference:**  \n
 Please cite this app when using it as follows:  \n
-De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195515
+De Kok, D. (2023). _Discuit App [Computer software]_. https://doi.org/10.5281/zenodo.8195514
 
 **Steps to take:**
 - Upload an input file (.csv) with your items;
