@@ -124,7 +124,7 @@ if input_file is not None:
         count = 0
         for column in column_list:
             var_help = "Select the data type for this variable: 'label' and 'ignore' will " \
-                       "not be considered when making the sets, 'absolut' can only be selected once " \
+                       "not be considered when making the sets, 'absolute' can only be selected once " \
                        "and should point to a categorical variable that needs to be split perfectly even."
             option = col1.selectbox('Select the type for "' + column + '"', variables, key=column, help=var_help)
             if option == "numerical":
@@ -143,7 +143,8 @@ if input_file is not None:
                 disregard.append(column)
                 count = count + 1
 
-        it_help = "Please select the number of splits you want to receive. If you select values higher than 1, " \
+        it_help = "Please select the number of runs you want to carry out (=options you will receive). " \
+                  "If you select values higher than 1, " \
                   "you will receive multiple output files. You can then choose the best distribution yourself."
         iterations = col2.slider("Number of splits", value=1, step=1, min_value=1, max_value=20, key="iterations",
                                  help=it_help)
