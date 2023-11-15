@@ -68,7 +68,7 @@ st.sidebar.markdown(
 - The variable type 'absolute' can be used for (max.) 1 categorical variable that needs to be split between 
 sets absolutely even.
 - Variable types 'ignore' and 'label' will not be considered when matching sets.
-- Selecting a higher number of splits means you will receive more than one possible split and 
+- Selecting a higher number of runs means you will receive more than one possible split and 
 then can decide which suits you best.
 - If the program fails, try again. If it still fails, try to remove one variable.  \n 
 
@@ -146,7 +146,7 @@ if input_file is not None:
         it_help = "Please select the number of runs you want to carry out (=options you will receive). " \
                   "If you select values higher than 1, " \
                   "you will receive multiple output files. You can then choose the best distribution yourself."
-        iterations = col2.slider("Number of splits", value=1, step=1, min_value=1, max_value=20, key="iterations",
+        iterations = col2.slider("Number of runs", value=1, step=1, min_value=1, max_value=20, key="iterations",
                                  help=it_help)
 
         cont = st.container()
